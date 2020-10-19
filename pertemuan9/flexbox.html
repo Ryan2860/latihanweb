@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan flex</title>
+    <style>
+        .container{
+            width: 100%;
+            height: 200px;
+            border: 5px solid red;
+            margin: auto;
+            display: flex;
+            /*flex-wrap: wrap;*/
+            /*flex-direction: column-reverse; column menghitung dari angka 1 sebaliknya jika coulmn reverse*/
+            /* flex-flow: column wrap; */
+            justify-content: center;
+            /* align-items: center; */
+
+
+        }
+        .card{
+            width: 50px;
+            height: 100px;
+            margin: 10px;
+            padding: 20px;
+            background-color: red;
+        }
+        .card1{
+            order: 1;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            padding: 20px;
+            background-color: red;
+        }
+        .card2{
+            order: 2;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            padding: 20px;
+            background-color: red;
+        }
+        .card3{
+            order: 4;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            padding: 20px;
+            background-color: red;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card1">1</div>
+       <div class="card2" style="font-size: 20px;">2</div>
+        <div class="card3">3</div>
+        <div class="card" style="font-size: 40px;">4</div>
+        <div class="card">5</div>
+        <div class="card">6</div>
+        <div class="card">7</div>
+        <div class="card">8</div>
+
+    </div>
+</body>
+</html>

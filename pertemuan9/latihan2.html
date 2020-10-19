@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <style>
+        .container{
+            border: 2px solid red;
+
+        }
+        /* table css */
+        @media (min-width: 700px){
+            .container{
+                border: none;
+                background-color: navy;
+            }
+        }
+
+
+        @media (max-width: 600px){
+            .container{
+                border: 2px solid green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, perspiciatis, sit hic ab suscipit exercitationem distinctio amet dolores alias blanditiis quod aperiam culpa veritatis, id tempore enim unde ratione! Nostrum quis quo dicta excepturi, totam quod quas expedita unde quos magni saepe eius! Dolorem ab ullam ipsam modi sunt magnam, nemo voluptatibus veniam blanditiis voluptatum porro incidunt vitae, iste veritatis?</div>
+    </div>
+</body>
+</html>
